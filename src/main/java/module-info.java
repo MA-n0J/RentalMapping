@@ -3,10 +3,12 @@ module com.example.rentalsystem {
     requires javafx.fxml;
 
     requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.core;
 
-    opens com.example.rentalsystem to javafx.fxml;
+    opens com.example.rentalsystem.controllers to javafx.fxml;
+    opens com.example.rentalsystem.fxml to javafx.fxml;
+
     exports com.example.rentalsystem;
+    exports com.example.rentalsystem.controllers;
 }
